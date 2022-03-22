@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $("#tombolfadeout").click(function() {
+                $(".box").fadeOut("fast");
+            })
+
+            $("#tombolfadein").click(function() {
+                $(".box").fadeIn("fast");
+            })
+            $("#tombolfadeto").click(function() {
+                $(".box").fadeTo("fast", 0.3);
+            })
+
+        });
+    </script>
+</head>
+<style>
+    .box {
+        width: 300px;
+        height: 250px;
+        background-color: yellow;
+        border: 3px solid black;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    .btn {
+        margin-top: 20px;
+    }
+</style>
+
+<body>
+    <h1>Penggunaan Button Untuk Efek Fade</h1>
+    <div class="box"></div>
+    <button class="btn" id="tombolfadeout">Fade Out</button>
+    <button class="btn" id="tombolfadein">Fade In</button>
+    <button class="btn" id="tombolfadeto">Fade To 0.3</button>
+
+</body>
+
+
+</html>

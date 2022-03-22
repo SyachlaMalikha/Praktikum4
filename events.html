@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.boxsatu').dblclick(function() {
+                $(this).css("background-color", "yellow");
+            });
+            $('.boxdua').dblclick(function() {
+                $(this).css("background-color", "green");
+            });
+            $('.boxtiga').dblclick(function() {
+                $(this).css("background-color", "blue");
+            });
+            $('.boxempat').dblclick(function() {
+                $(this).css("background-color", "red");
+            });
+        });
+    </script>
+</head>
+<style type="text/css">
+    h1 {
+        text-align: center;
+    }
+    
+    div {
+        float: left;
+        margin: 20px
+    }
+    
+    .boxempat {
+        height: 100px;
+        width: 100px;
+        background: orange;
+    }
+    
+    .boxtiga {
+        height: 100px;
+        width: 100px;
+        background: orange;
+    }
+    
+    .boxdua {
+        height: 100px;
+        width: 100px;
+        background: orange;
+    }
+    
+    .boxsatu {
+        height: 100px;
+        width: 100px;
+        background: orange;
+    }
+    
+    .contentsatu {
+        color: yellow;
+    }
+    
+    .contentdua {
+        color: green;
+    }
+    
+    .contenttiga {
+        color: blue;
+    }
+    
+    .contentempat {
+        color: red;
+    }
+</style>
+
+<body>
+    <h1>Klik 2x untuk melihat perubahan yang terjadi</h1>
+    <div class="boxsatu">
+        <div class="contentsatu">kotak pertama</div>
+    </div>
+    <div class="boxdua">
+        <div class="contentdua">kotak kedua</div>
+    </div>
+    <div class="boxtiga">
+        <div class="contenttiga">kotak ketiga</div>
+    </div>
+    <div class="boxempat">
+        <div class="contentempat">kotak keempat</div>
+    </div>
+
+</body>
+
+</html>
